@@ -432,7 +432,7 @@ void CInsetWindow::render(HDC hDC, CSMRRadar *radar_screen, Graphics *gdi,
 
     // ----- Generating the replacing map -----
     map<string, string> TagReplacingMap = CSMRRadar::GenerateTagData(
-      rt, fp, AcisCorrelated || isInboundArrival,
+        rt, fp, AcisCorrelated || isInboundArrival,
         radar_screen->CurrentConfig
             ->getActiveProfile()["filters"]["pro_mode"]["enable"]
             .GetBool(),
